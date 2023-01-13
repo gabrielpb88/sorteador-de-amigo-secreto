@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
-import ListaDeParticipantes from './ListaDeParticipantes';
+import ListaParticipantes from './ListaParticipantes';
 import { useListaDeParticipantes } from '../state/hooks/useListaDeParticipantes';
 
 // o código abaixo cria um mock da função useListaDeParticipantes.
@@ -18,7 +18,7 @@ describe('uma lista vazia de participantes', () => {
   test('deve ser renderizada sem elementos', () => {
     render(
       <RecoilRoot>
-        <ListaDeParticipantes />
+        <ListaParticipantes />
       </RecoilRoot>,
     );
 
@@ -35,7 +35,7 @@ describe('uma lista preenchida de participantes', () => {
   test('deve ser renderizada sem elementos', () => {
     render(
       <RecoilRoot>
-        <ListaDeParticipantes />
+        <ListaParticipantes />
       </RecoilRoot>,
     );
 
