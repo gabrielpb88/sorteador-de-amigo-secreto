@@ -22,6 +22,6 @@ describe('Pagina do sorteio', () => {
     );
 
     const opcoes = screen.getAllByRole('option');
-    expect(opcoes.length).toBe(participantes.length);
+    expect(opcoes.length).toEqual(participantes.length);
   });
 });
